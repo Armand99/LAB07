@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.548);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: times, "Times New Roman";
+  font-size: 1.5 rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 8px 25px;
+  transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0 0 10px rgb(84, 249, 255);
+}
+
+/* ACASA */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(1.jpg) no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: center;
+  right: center;
+}
+
+.headings {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  transition: .6s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+}
+
+/* DESPRE MINE */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#pict img {
+  float: left;
+  width: 575px;
+  height: 400px;
+  clip-path: circle();
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* DESPRE MUZICA */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.pict2 {
+  display: flex;
+  float: right;
+  height: 650px;
+  width: 400px;
+  clip-path: circle();
+}
+
+/* CONTACT */
+
+#intro2 {
+  float: center;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#links {
+  float: center;
+  font-size: 1.5rem;
+}
